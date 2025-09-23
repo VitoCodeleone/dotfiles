@@ -1,1 +1,0 @@
-/home/kp/.zshrc
