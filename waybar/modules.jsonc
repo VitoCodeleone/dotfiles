@@ -1,0 +1,48 @@
+{
+  // Launcher
+  "custom/launcher": {
+    "format": "",
+    "on-click": "wofi --show drun",
+    "tooltip": false
+  },
+ 
+  // Workspaces
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+
+  // Cava
+  "custom/cava": {
+    "exec": "~/.config/waybar/scripts/cava.sh",
+    "format": "♪ {}",
+    "on-click-middle": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-left": "playerctl previous"
+  },
+
+  "memory": {
+    "format": " {: >3}%",
+    "on-click": "NeoHtop"
+  },
+  "cpu": {
+    "format": "󰘚 {usage: >3}%",
+    "on-click": "NeoHtop"
+  },
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+    "critical-threshold": 80,
+    "format": "  {temperatureC}°C",
+    "on-click": "NeoHtop"
+  }
+}
