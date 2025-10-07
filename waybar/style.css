@@ -1,12 +1,18 @@
 * {
   font-family: "FiraCode Nerd Font", monospace;
   font-size: 13px;
+  color: #cdd6f4;
 }
 
 window#waybar {
-  background: rgba(30, 30, 30, 0.8);
-  color: #cdd6f4;
+  background: rgba(30, 30, 46, 0.8);
 }
+
+#custom-launcher {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
 
 #workspaces button {
   padding: 4px 8px;

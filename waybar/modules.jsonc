@@ -33,16 +33,13 @@
 
   "memory": {
     "format": " {: >3}%",
-    "on-click": "NeoHtop"
   },
   "cpu": {
     "format": "󰘚 {usage: >3}%",
-    "on-click": "NeoHtop"
   },
-  "temperature": {
-    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
-    "critical-threshold": 80,
-    "format": "  {temperatureC}°C",
-    "on-click": "NeoHtop"
+  "custom/temperature": {
+    "exec": "~/.config/waybar/scripts/cpu_temp_finder.py",
+    "format": "  {}°C",
+    "interval": 5
   }
 }

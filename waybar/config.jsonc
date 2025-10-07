@@ -8,7 +8,7 @@
 
   
   "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/cava"],
-  "modules-center": ["memory", "cpu", "temperature"],
+  "modules-center": ["memory", "cpu", "custom/temperature"],
   "modules-right": ["battery", "pulseaudio", "network", "clock"],
 
   "clock": {
